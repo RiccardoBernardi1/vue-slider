@@ -43,6 +43,9 @@ createApp({
             }else{
                 this.imageActive=0;
             }
+        },
+        changeImage(i){
+            this.imageActive=i;
         }
     }
 }).mount("#app");
