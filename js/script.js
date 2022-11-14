@@ -28,5 +28,21 @@ createApp({
                 }
             ],
         }
+    },
+    methods:{
+        prevImage(){
+            if(this.imageActive!=0){
+                this.imageActive--;
+            }else{
+                this.imageActive=this.slides.length-1;
+            }
+        },
+        nextImage(){
+            if(this.imageActive!=this.slides.length-1){
+                this.imageActive++;
+            }else{
+                this.imageActive=0;
+            }
+        }
     }
 }).mount("#app");
